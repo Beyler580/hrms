@@ -13,7 +13,7 @@ import lombok.Data;
 @Table(name = "Users")
 public class User {
 	@Id
-	@GeneratedValue
+	@GeneratedValue()
 	@Column(name = "id")
 	private int id ; 
 	@Column(name = "email")
@@ -27,7 +27,7 @@ public class User {
 		
 	}
 	
-	public User(int id, String email, String password) {
+	public User( int id,String email, String password) {
 		super();
 		this.id = id;
 		this.email = email;
